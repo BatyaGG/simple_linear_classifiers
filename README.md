@@ -25,6 +25,4 @@ Linear regression algorithm results in a weight (w_lin), which we obtain if we w
 
 so we minimize _E<sub>in</sub>(w)_ over all possible _**W**_ ∈ _R<sup>d + 1</sup>_, finding _**W<sub>lin</sub>**_ = _argminE<sub>in</sub>(**W**)_, which is a global min of derivative of _E<sub>in</sub>(W)_. Finally,
 
-<p>
-_w_
-</p>
+-> asdasd<-
