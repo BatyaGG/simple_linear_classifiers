@@ -108,7 +108,7 @@ Detailed, the 10-fold CV algorithm takes 90% of data and fits a model, calculate
 </p>
 
 <p align="center"> 
-<img src="https://raw.githubusercontent.com/BatyaGG/simple_linear_classifiers/master/figures/cv2.PNG" width="70%">
+<img src="https://raw.githubusercontent.com/BatyaGG/simple_linear_classifiers/master/figures/cv2.PNG" width="90%">
 <br>
 <i>Cross-validation errors vs # validation</i>
 </p>
