@@ -23,4 +23,4 @@ Linear regression algorithm results in a weight (w_lin), which we obtain if we w
 <img src="https://raw.githubusercontent.com/BatyaGG/simple_linear_classifiers/master/figures/regression.PNG" width="70%"> 
 </p> 
 
-so we minimize _E<sub>in</sub>(w)_ over all possible _w_ <p>&&euro<p>
+so we minimize _E<sub>in</sub>(w)_ over all possible _w_ ∈ _R<sup>d + 1</sup>_
