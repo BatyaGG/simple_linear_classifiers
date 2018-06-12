@@ -22,3 +22,5 @@ Linear regression algorithm results in a weight (w_lin), which we obtain if we w
 <p align="center"> 
 <img src="https://raw.githubusercontent.com/BatyaGG/simple_linear_classifiers/master/figures/regression.PNG" width="70%"> 
 </p> 
+
+so we minimize _E<sub>in</sub>(w)_ 
