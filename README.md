@@ -74,5 +74,5 @@ Starting from some weights, the algorithm repeatedly takes small steps in the op
 <p align="center"> 
 <img src="https://raw.githubusercontent.com/BatyaGG/simple_linear_classifiers/master/figures/logistic_weights.PNG" width="70%">
 <br>
-<i>2D space with target function and generated function with test data</i>
+<i>Change of weights vs # iterations</i>
 </p>
