@@ -58,7 +58,5 @@ f(x) = P[**Y** = +1|X]
 need to use the error measure used for logistic regression, which is based on the likehood.
 
 <p align="center"> 
-<img src="https://raw.githubusercontent.com/BatyaGG/simple_linear_classifiers/master/figures/logitstic_error.PNG" width="70%">
-<br>
-<i>E<sub>test</sub>(<b>W</b><sub>pocket</sub>) vs E<sub>test</sub>(<b>W</b><sub>lin</sub>) scatter plot</i>
+<img src="https://raw.githubusercontent.com/BatyaGG/simple_linear_classifiers/master/figures/logitstic_error.PNG">
 </p>
