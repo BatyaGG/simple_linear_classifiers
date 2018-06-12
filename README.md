@@ -40,5 +40,7 @@ Limitations of linear regression in data analysis: output must have linear corre
 <p align="center"> 
 <img src="https://raw.githubusercontent.com/BatyaGG/simple_linear_classifiers/master/figures/lin_vs_pock2.PNG" width="70%">
 <br>
-<i>E<sub>test</sub>(<b>W</b><sub>pocket</sub>) vs E<sub>test</sub>(<b>W</b><sub>lin</sub>)</i>
+<i>E<sub>test</sub>(<b>W</b><sub>pocket</sub>) vs E<sub>test</sub>(<b>W</b><sub>lin</sub>) scatter plot</i>
 </p>
+
+After about 20 iterations, it can be concluded that pocket algorithm performs better in general having _E<sub>test</sub>_ concentrated between 0.1 and 0.13 in comparison to linear regression with _E<sub>test</sub>_ concentrated between 0.1 and 0.18.
