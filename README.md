@@ -20,5 +20,5 @@ Run ```Pocket_vs_linear_analysis.m``` file, which generates random linear separa
 Linear regression algorithm results in a weight (w_lin), which we obtain if we will minimize expected value of the squared error between our hypothesis and output (E_out). So in other words we need to find the hypothesis, which gives the smallest (E_out). But since labeling y comes from distribution P(y|x), which is unknown for us, we cannot estimate E_out and so we use E_in and comparative techniques.
 
 <p align="center"> 
-<img src="https://raw.githubusercontent.com/BatyaGG/simple_linear_classifiers/master/figures/regression.PNG" width="90%"> 
+<img src="https://raw.githubusercontent.com/BatyaGG/simple_linear_classifiers/master/figures/regression.PNG" width="70%"> 
 </p> 
