@@ -76,3 +76,17 @@ Starting from some weights, the algorithm repeatedly takes small steps in the op
 <br>
 <i>Change of weights vs # iterations</i>
 </p>
+
+It can be seen from above graphs that weights are changing linearly with gradient specified slope.
+
+<p align="center"> 
+<img src="https://raw.githubusercontent.com/BatyaGG/simple_linear_classifiers/master/figures/logistic_errors.PNG" width="70%">
+<br>
+<i>E<sub>in</sub> and E<sub>out</sub> vs # iterations</i>
+</p>
+
+<p align="center"> 
+<img src="https://raw.githubusercontent.com/BatyaGG/simple_linear_classifiers/master/figures/logistic_gradient.PNG" width="70%">
+<br>
+<i>Weight gradients vs # iterations</i>
+</p>
