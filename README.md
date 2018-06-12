@@ -15,6 +15,8 @@ https://work.caltech.edu/telecourse.html
 
 Clone the project.
 
+### Exercise 1
+
 Run ```Pocket_vs_linear_analysis.m``` file, which generates random linear separator line and arranges 90 true (+1, -1) points and 10 outliers. There are implementations of pocket perceptron and linear regression algorithms, which are tested on 900 true and 100 outlier randomly generated datapoints.
 
 Linear regression algorithm results in a weight **_W<sub>lin</sub>_**, which we obtain if we will minimize expected value of the squared error between our hypothesis and output _E<sub>out</sub>_. So in other words we need to find the hypothesis, which gives the smallest _E<sub>out</sub>_. But since labeling y comes from distribution P(y|x), which is unknown for us, we cannot estimate _E<sub>out</sub>_ and so we use _E<sub>in</sub>_ and comparative techniques.
@@ -44,3 +46,6 @@ Limitations of linear regression in data analysis: output must have linear corre
 </p>
 
 After about 20 iterations, it can be concluded that pocket algorithm performs better in general having _E<sub>test</sub>_ concentrated between 0.1 and 0.13 in comparison to linear regression with _E<sub>test</sub>_ concentrated between 0.1 and 0.18.
+
+### Exercise 2
+
