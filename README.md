@@ -51,4 +51,5 @@ After about 20 iterations, it can be concluded that pocket algorithm performs be
 
 Run ```LogisticAnalysis.m``` file, which also generates 10 outlier ans 90 true data points to train logistic regression algorithm implemented in the file. Testing was done on 100 outliers and 900 true data points. The script is an analysis of gradient descent algorithm for logistic regression.
 
-This method uses logistic function: 𝜃 = _e<sup>s</sup> / 1 + e<sup>s</sup>_, which allows to get the 0-1 range. We have target function f(x) = P[**Y** = +1|X], need to use the error measure used for logistic regression, which is based on the likehood.
+This method uses logistic function: 𝜃 = _e<sup>s</sup> / 1 + e<sup>s</sup>_, which allows to get the 0-1 range.
+We have target function f(x) = P[**Y** = +1|X], need to use the error measure used for logistic regression, which is based on the likehood.
