@@ -53,6 +53,12 @@ Run ```LogisticAnalysis.m``` file, which also generates 10 outlier ans 90 true d
 
 This method uses logistic function: 𝜃 = _e<sup>s</sup> / 1 + e<sup>s</sup>_, which allows to get the 0-1 range. We have target function 
 
-f(x) = P[**Y** = +1|X], 
+f(x) = P[**Y** = +1|X]
 
 need to use the error measure used for logistic regression, which is based on the likehood.
+
+<p align="center"> 
+<img src="https://raw.githubusercontent.com/BatyaGG/simple_linear_classifiers/master/figures/logitstic_error.PNG" width="70%">
+<br>
+<i>E<sub>test</sub>(<b>W</b><sub>pocket</sub>) vs E<sub>test</sub>(<b>W</b><sub>lin</sub>) scatter plot</i>
+</p>
