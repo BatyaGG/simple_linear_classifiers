@@ -30,3 +30,15 @@ so we minimize _E<sub>in</sub>(w)_ over all possible _**W**_ ∈ _R<sup>d + 1</s
 </p>
 
 Limitations of linear regression in data analysis: output must have linear correlation to all input dimensions and input dimensions needs to be independent of each other, noise must be approximated normally and have zero mean. Therefore, results of linear regressions are highly depended on outliers. Even few outliers may significantly degenerate resulting weights. Moreover, linear model may easily overfit since regression models noise together with true observations. Pocket and Linear Regression algorithms are compared in ```Pocket_vs_linear_analysis.m``` script in terms of _E<sub>out<sub>_. Pocket algorithm, compared to PLA may also be applied for non separable data, where it will give the result with less number of misclassified data points. Basically it is modified version of PLA, storing best weights with less _E<sub>in</sub>_. However it requires more computational time, because it iteratively updates weights, and compares them against previous best weights estimating _E<sub>in</sub>_ at each iteration.
+
+<p align="center"> 
+<img src="https://raw.githubusercontent.com/BatyaGG/simple_linear_classifiers/master/figures/lin_vs_pock1.PNG" width="70%">
+<br>
+<i>One of pocket vs linear regression comparison trials</i>
+</p>
+
+<p align="center"> 
+<img src="https://raw.githubusercontent.com/BatyaGG/simple_linear_classifiers/master/figures/lin_vs_pock2.PNG" width="70%">
+<br>
+<i>E<sub>test</sub>(<b>W</b><sub>pocket</sub>) vs E<sub>test</sub>(<b>W</b><sub>lin</sub>)</i>
+</p>
