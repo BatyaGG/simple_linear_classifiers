@@ -27,4 +27,4 @@ so we minimize _E<sub>in</sub>(w)_ over all possible _**W**_ ∈ _R<sup>d + 1</s
 
 <p>
 _w_
-</>
+</p>
