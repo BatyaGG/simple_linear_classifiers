@@ -112,3 +112,6 @@ Detailed, the 10-fold CV algorithm takes 90% of data and fits a model, calculate
 <br>
 <i>Cross-validation errors vs # validation</i>
 </p>
+
+Constantly, the smallest error had pocket PLA algorithm and the worst generalization was for the logistic regression. This was due to the fact that logistic regression uses exponential function, which is more sensitive for the disturbances. Also linear and logistic
+regressions consider whole data (including outliers), which decreases the performance of the final hypothesis. On the other hand, pocket algorithm ignores bad hypotheses and outliers by choosing the best candidate linear function.
