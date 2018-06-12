@@ -85,8 +85,30 @@ It can be seen from above graphs that weights are changing linearly with gradien
 <i>E<sub>in</sub> and E<sub>out</sub> vs # iterations</i>
 </p>
 
+In sample error _E<sub>in</sub>_ starts from respectively small value, growing to some extend. At the same time test error _E<sub>out</sub>_ starts from bigger value decreasing by each iteration. Basically, less iterations tends to overfitted model having low in-sample error and poor generalization. It can be seen from the plot, that 1000 iterations are enough to retrieve stable and good generalized model.
+
 <p align="center"> 
 <img src="https://raw.githubusercontent.com/BatyaGG/simple_linear_classifiers/master/figures/logistic_gradient.PNG" width="70%">
 <br>
 <i>Weight gradients vs # iterations</i>
+</p>
+
+Those fluctuations that we can see in the above graph are due to the alternating directions of gradient g(t). Moreover, alternating fluctuations makes exponential part to converge as they are not in-phase with each other.
+
+### Exercise 3
+
+The aim of this task is to compare implemented algorithms in terms of performance for randomly generated data. Basically, we have to apply model selection having 3 candidate models with fixed hyper-parameters. We have to obtain best generelized model i.e. least out-sample error _E<sub>out</sub>_. The problem is absence of information about out-sample observations, therefore cross-validation (CV) technique is applied in such model selection problems. CV basically consists of data splitting to train/test subsamples, fitting on train partision and calculation of point-wise error _E<sub>val</sub> = (1/K)Σe(g<sup>-</sup>(x<sub>n</sub>), y<sub></sub>)_ on test data subsample. The key point is choice of ratios for train and test data sizes. Most widely used ratio is 1/10 or 1/5 which are called 10-fold or 5-fold cross validation respectively.
+
+Detailed, the 10-fold CV algorithm takes 90% of data and fits a model, calculates validation error _E<sub>val</sub>_ on the rest 10% of data and stores it. Then, another 90% of data is chosen, such that rest 10% of data have no common observations with previously used test subsamples. Similarly, the model is fitted to train set and error is calculated with respect to test data set. This process is preformed 10 times, finally average error is returned by the algorithm.
+
+<p align="center"> 
+<img src="https://raw.githubusercontent.com/BatyaGG/simple_linear_classifiers/master/figures/cv1.PNG" width="70%">
+<br>
+<i>All three algorithm hypotheses with target function in 2D feature space</i>
+</p>
+
+<p align="center"> 
+<img src="https://raw.githubusercontent.com/BatyaGG/simple_linear_classifiers/master/figures/cv2.PNG" width="70%">
+<br>
+<i>Cross-validation errors vs # validation</i>
 </p>
