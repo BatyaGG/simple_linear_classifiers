@@ -60,3 +60,19 @@ need to use the error measure used for logistic regression, which is based on th
 <p align="center"> 
 <img src="https://raw.githubusercontent.com/BatyaGG/simple_linear_classifiers/master/figures/logitstic_error.PNG">
 </p>
+
+To train logistic regression model, we need to find the gradient of _E<sub>in</sub>_ and set it to zero, which is not feasible analytically. But we can iteratively set it to zero, using gradient descent method.
+
+Starting from some weights, the algorithm repeatedly takes small steps in the opposite direction of the gradient, reaching global minimum of gradient function. Before updating the weights data should be shuffled. Limitations of this algorithm are that sometimes it can just “dance around” global minimum and not converging. This happens when the learning rate is not properly chosen. Choosing big rate fastens the algorithm however results in unstable solution, making “dance around” problem. I've used fixed learning rate = 0.001, and 0 vector as an initial weights. Number of iterations was fixed to 2000 iteration limit.
+
+<p align="center"> 
+<img src="https://raw.githubusercontent.com/BatyaGG/simple_linear_classifiers/master/figures/logistic_space.PNG" width="70%">
+<br>
+<i>2D space with target function and generated function with test data</i>
+</p>
+
+<p align="center"> 
+<img src="https://raw.githubusercontent.com/BatyaGG/simple_linear_classifiers/master/figures/logistic_weights.PNG" width="70%">
+<br>
+<i>2D space with target function and generated function with test data</i>
+</p>
