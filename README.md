@@ -17,14 +17,8 @@ Clone the project.
 
 Run ```Pocket_vs_linear_analysis.m``` file, which generates random linear separator line and arranges 90 true (+1, -1) points and 10 outliers. There are implementations of pocket perceptron and linear regression algorithms, which are tested on 900 true and 100 outlier randomly generated datapoints.
 
-```
-%% Linear regression algorithm
-% Creating an input X vector and weights W vector
-X = [ones(length(x1),1) x1 x2];
-Wlin = randn(3,1);
-% Linear regression learning algorithm
-Wlin = (inv(X'*X)*X')*Y';
-Sign = Wlin'*Xtest';
-error = length(find(Ytest.*Sign<0));
-error2 = error/(mtest+ntest);
-```
+Linear regression algorithm results in a weight (w_lin), which we obtain if we will minimize expected value of the squared error between our hypothesis and output (E_out). So in other words we need to find the hypothesis, which gives the smallest (E_out). But since labeling y comes from distribution P(y|x), which is unknown for us, we cannot estimate E_out and so we use E_in and comparative techniques.
+
+<p align="center"> 
+<img src="https://raw.githubusercontent.com/BatyaGG/simple_linear_classifiers/master/figures/regression.PNG" width="90%"> 
+</p> 
